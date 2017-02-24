@@ -1,4 +1,4 @@
-<html>
+<!doctype html>
     <head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
@@ -6,32 +6,41 @@
         <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     </head>
     <body>
-        <div class="demo-layout-transparent mdl-layout mdl-js-layout">
-            <header class="mdl-layout__header mdl-layout__header--transparent">
+        <div class="mdl-layout mdl-js-layout">
+            <header class="demo-layout-transparent mdl-layout__header">
                 <div class="mdl-layout__header-row">
                     <!-- Title -->
-                    <span class="mdl-layout-title">Title</span>
+                    <span class="mdl-layout-title">Luna Coffee</span>
                     <!-- Add spacer, to align navigation to the right -->
                     <div class="mdl-layout-spacer"></div>
                     <!-- Navigation -->
                     <nav class="mdl-navigation">
-                        <a class="mdl-navigation__link" href="">Link</a>
-                        <a class="mdl-navigation__link" href="">Link</a>
-                        <a class="mdl-navigation__link" href="">Link</a>
-                        <a class="mdl-navigation__link" href="">Link</a>
+                        <a class="mdl-navigation__link" href="">Home</a>
+                        <a class="mdl-navigation__link" href="">Menu</a>
+                        <a class="mdl-navigation__link" href="">Events</a>
+                        <a class="mdl-navigation__link" href="">Login</a>
                     </nav>
                 </div>
             </header>
             <div class="mdl-layout__drawer">
-                <span class="mdl-layout-title">Title</span>
+                <span class="mdl-layout-title">Luna Coffee</span>
                 <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" href="">Link</a>
-                    <a class="mdl-navigation__link" href="">Link</a>
-                    <a class="mdl-navigation__link" href="">Link</a>
-                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Home</a>
+                    <a class="mdl-navigation__link" href="">Menu</a>
+                    <a class="mdl-navigation__link" href="">Events</a>
+                    <a class="mdl-navigation__link" href="">Login</a>
                 </nav>
             </div>
-            <main class="mdl-layout__content"></main>
+            <main class="mdl-layout__content">
+                <div class="page-content mdl-grid">
+                    <div class="brown-background test-cell mdl-cell mdl-cell--4-col">
+                        Main Content
+                    </div>
+                    <div class="gray-background test-cell mdl-cell mdl-cell--8-col">
+                        More Content
+                    </div>
+                </div>
+            </main>
         </div>
     </body>
 </html>

@@ -5,12 +5,33 @@
 }
 
 .demo-layout-transparent {
-    background: url('assets/moon-1.jpg') center / cover;
-    height: 30%;
+    background: url('assets/luna-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: black;
+    height: 40%;
 }
+.demo-layout-transparent--static-height {
+    height: 260px;
+}
+
 .demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
+.demo-layout-transparent .mdl-layout__drawer-button, .test-cell {
     /* This background is dark, so we set text to white. Use 87% black instead if
     your background is light. */
     color: white;
+    background-color: black;
+}
+
+.test-cell {
+    padding: 10px;
+    text-align: center;
+}
+
+.brown-background {
+    background-color: saddlebrown;
+}
+.gray-background {
+    background-color: dimgray;
 }
