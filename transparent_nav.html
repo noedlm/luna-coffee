@@ -2,6 +2,7 @@
     <head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <link rel="stylesheet" href="resources/css/swiper.min.css">
         <link rel="stylesheet" href="main.css"> 
         <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     </head>
@@ -42,5 +43,18 @@
                 </div>
             </main>
         </div>
+        <script src="resources/js/Swiper-3.4.1/swiper.min.js"></script>
+         <script>
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                spaceBetween: 0,
+                autoplay: 2500,
+                loop: true,
+                effect: 'fade'
+            });
+        </script>
     </body>
 </html>

@@ -2,7 +2,8 @@
     <head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.brown-blue.min.css">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="resources/css/swiper.min.css">
+        <link rel="stylesheet" href="resources/css/main.css">
         <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     </head>
     <body>
@@ -29,11 +30,31 @@
                     <a class="mdl-navigation__link" href="#">Login</a>  
                 </nav>
             </div>
-            <main class="mdl-layout__content">
-                <div class="mdl-grid mdl-grid--no-spacing">
-                    <section class="demo-layout-transparent demo-layout-transparent--static-height mdl-cell mdl-cell--12-col"></section>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(assets/luna-1.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(assets/luna-2.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(assets/luna-3.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(assets/luna-4.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(assets/luna-5.jpg)"></div>
                 </div>
+            </div>
+            <main class="mdl-layout__content">
+                
             </main>
         </div>
+        <script src="resources/js/Swiper-3.4.1/swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                //pagination: '.swiper-pagination',
+                //paginationClickable: true,
+                //nextButton: '.swiper-button-next',
+                //prevButton: '.swiper-button-prev',
+                autoplay: 3500,
+                speed: 900,
+                loop: true,
+                effect: 'fade'
+            });
+        </script>
     </body>
 </html>

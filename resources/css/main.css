@@ -35,3 +35,17 @@
 .gray-background {
     background-color: dimgray;
 }
+
+
+/*Swiper styles*/
+.swiper-container {
+    height: 60%;
+    width: 100%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #1f1f1f;
+}
