@@ -1,3 +1,55 @@
+body, html {
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.opaque {
+    opacity: 0.7;
+}
+
+.text-center--full-width {
+    text-align: center;
+    width: 100%;
+}
+
+.pretty-span, .pretty-span--big {
+    background-color: #111;
+    color: white;
+    letter-spacing: 5px;
+    padding: 15px;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+.pretty-span--big {
+    font-size: 1.8vw;
+    letter-spacing: 12px;
+}
+
+.disable-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+.logo-background, .logo-background--third-height {
+    background-image: url('../../assets/luna-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.logo-background--third-height {
+    height: 33%;
+}
+
 /* Navigation */
 .nav {
     background-color: black;
@@ -32,10 +84,30 @@
 .brown-background {
     background-color: saddlebrown;
 }
+
 .gray-background {
     background-color: dimgray;
 }
 
+.margin-md {
+    margin: 25px;
+}
+
+.circle-md {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: peachpuff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-md__text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 /*Swiper styles*/
 .swiper-container {
@@ -48,4 +120,37 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #1f1f1f;
+}
+
+/*parallax*/
+.parallax {
+    background-image: url('../../assets/moon-original.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*flex stuff*/
+
+.flex-container, .flex-container--vertical-flow, .flex-container--center {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex-container--vertical-flow {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.flex-container--center {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.flex-item--align-bottom {
+    align-self: flex-end;
+    margin-bottom: 50px;
 }
