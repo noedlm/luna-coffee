@@ -1,3 +1,7 @@
+body, html {
+    height: 100%;
+}
+
 /* Navigation */
 .nav {
     background-color: black;
@@ -36,6 +40,25 @@
     background-color: dimgray;
 }
 
+.margin-md {
+    margin: 25px;
+}
+
+.circle-md {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: peachpuff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-md__text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 /*Swiper styles*/
 .swiper-container {
@@ -48,4 +71,29 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #1f1f1f;
+}
+
+/*parallax*/
+.parallax {
+    background-image: url('../../assets/moon-original.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax__container {
+    left: 0;    
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%
+}
+
+.parallax__container__item {
+    background-color: #111;
+    color: white;
+    letter-spacing: 5px;
+    padding: 15px;
 }
