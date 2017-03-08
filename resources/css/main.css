@@ -96,4 +96,5 @@ body, html {
     color: white;
     letter-spacing: 5px;
     padding: 15px;
+    text-transform: uppercase;
 }
